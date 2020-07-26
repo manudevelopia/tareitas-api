@@ -14,11 +14,14 @@ dependencies {
     implementation 'com.sparkjava:spark-core:2.9.1'
     implementation 'org.slf4j:slf4j-simple:1.7.21'
     implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'org.mybatis:mybatis:3.5.5'
     implementation 'info.developia.gti:gti-core:1.0-SNAPSHOT'
 
     testImplementation 'org.codehaus.groovy:groovy-all:3.0.3'
     testImplementation 'org.spockframework:spock-core:2.0-M3-groovy-3.0'
     testImplementation 'io.rest-assured:rest-assured:4.3.1'
+
+    runtime 'org.postgresql:postgresql:42.2.14'
 }
 
 application {

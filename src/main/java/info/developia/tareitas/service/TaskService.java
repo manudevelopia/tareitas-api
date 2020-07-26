@@ -8,12 +8,10 @@ import java.util.List;
 @Injection
 public class TaskService {
 
+    Persistence persistence = new Persistence();
+
     public List<Task> getAll() {
-        return List.of(
-                new Task("task1"),
-                new Task("task2"),
-                new Task("task3")
-        );
+        return persistence.doSomething();
     }
 
     public Task create(Task task) {
