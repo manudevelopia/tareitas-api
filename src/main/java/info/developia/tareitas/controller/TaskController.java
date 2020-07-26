@@ -24,7 +24,7 @@ public class TaskController {
 
     public Task create(Request request, Response response) {
         response.status(201);
-        Task task = new Gson().fromJson(request.body(), Task.class);
-        return task;
+        Task newTask = new Gson().fromJson(request.body(), Task.class);
+        return taskService.create(newTask);
     }
 }

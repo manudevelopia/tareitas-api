@@ -15,4 +15,8 @@ public class TaskService {
                 new Task("task3")
         );
     }
+
+    public Task create(Task task) {
+        return new Task(task.getTitle());
+    }
 }

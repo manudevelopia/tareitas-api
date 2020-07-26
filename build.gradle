@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
     implementation 'com.sparkjava:spark-core:2.9.1'
+    implementation 'org.slf4j:slf4j-simple:1.7.21'
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'info.developia.gti:gti-core:1.0-SNAPSHOT'
 
